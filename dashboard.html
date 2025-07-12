@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Directory</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 style="color: #007bff;">AJACKUS</h1>
+            <a href="http://www.ajackus.com" target="_blank" style="color: #666; font-size: 0.9em;">For more information visit www.ajackus.com</a>
+        </header>
+        <div class="toolbar">
+            <h2 style="margin: 0;">Employee Directory</h2>
+            <input type="text" id="search-bar" placeholder="Search by name or email">
+            <select id="sort">
+                <option value="">--Select--</option>
+                <option value="name">Name</option>
+                <option value="department">Department</option>
+            </select>
+            <select id="show">
+                <option value="10">Show: 10</option>
+                <option value="25">Show: 25</option>
+                <option value="50">Show: 50</option>
+            </select>
+            <button id="add-employee-btn">Add Employee</button>
+        </div>
+        <div class="employee-directory" id="employee-list"></div>
+        <!-- Add Employee Modal -->
+        <div id="add-modal" class="modal">
+            <div class="modal-content">
+                <h2>Add Employee</h2>
+                <form id="employee-form">
+                    <input type="text" id="firstName" placeholder="First Name" required>
+                    <input type="text" id="lastName" placeholder="Last Name" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <select id="department" required>
+                        <option value="">Select Department</option>
+                        <option value="HR">HR</option>
+                        <option value="IT">IT</option>
+                        <option value="Finance">Finance</option>
+                    </select>
+                    <select id="role" required>
+                        <option value="">Select Role</option>
+                        <option value="Manager">Manager</option>
+                        <option value="Developer">Developer</option>
+                        <option value="Analyst">Analyst</option>
+                    </select>
+                    <button type="button" id="cancel-btn">Cancel</button>
+                    <button type="submit" id="add-btn">Add</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <p>© 2025 Employee Directory App. All rights reserved</p>
+        </footer>
+    </div>
+    <script src="../static/js/data.js"></script>
+    <script src="../static/js/app.js"></script>
+</body>
+</html>

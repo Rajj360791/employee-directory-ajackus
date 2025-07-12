@@ -1,0 +1,27 @@
+<div id="form-modal" class="modal">
+    <div class="modal-content">
+        <h2>Add Employee</h2>
+        <form id="employee-form">
+            <input type="text" id="first-name" placeholder="First Name" required>
+            <span id="first-name-error" class="error"></span>
+            <input type="text" id="last-name" placeholder="Last Name" required>
+            <span id="last-name-error" class="error"></span>
+            <input type="email" id="email" placeholder="Email" required>
+            <span id="email-error" class="error"></span>
+            <select id="department" required>
+                <option value="">Select Department</option>
+                <option value="HR">HR</option>
+                <option value="IT">IT</option>
+                <option value="Finance">Finance</option>
+            </select>
+            <select id="role" required>
+                <option value="">Select Role</option>
+                <option value="Manager">Manager</option>
+                <option value="Developer">Developer</option>
+                <option value="Analyst">Analyst</option>
+            </select>
+            <button type="button" id="cancel-btn">Cancel</button>
+            <button type="submit" id="add-btn">Add</button>
+        </form>
+    </div>
+</div>
